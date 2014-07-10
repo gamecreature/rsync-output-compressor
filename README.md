@@ -41,8 +41,7 @@ By piping the output of your rsync command to this script the output is filtered
 
 ## Usage
 
-This script requires a rules file, which describes what needs to be filtered. The rules file is a required
-arguments.
+This script requires a rules file, which describes what needs to be filtered. The rules file is a required argument.
 
 The first example shows above could have ben run like this:
 
@@ -50,7 +49,7 @@ The first example shows above could have ben run like this:
 rsync -avz --delete user@example.com:/data /backups/remote_data | rsync-output-compressor.rb --rules compress-rules.txt
 ```
 
-The rules file in this example is 'compress-rules.txt'. See the text  below for example rule files
+The rules file in this example is 'compress-rules.txt'. See the text below for example rule files and their output.
 
 
 
@@ -59,7 +58,7 @@ The rules file in this example is 'compress-rules.txt'. See the text  below for 
 
 #### Simple example
 
-The basic rule is that Every path that starts with the given prefix is grouped together.
+The basic rule is that every path that starts with the given prefix is grouped together.
 
 ```
 # Starting a line with a '#' is interpreted as a comment
